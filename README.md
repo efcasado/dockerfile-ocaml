@@ -61,8 +61,8 @@ print_string "Hello, world!\n";;
 ```
 
 ```bash
-ocamlc hello.ml -o hello
-ocamlrun hello
+> ocamlc hello.ml -o hello
+> ocamlrun hello
 Hello, world!
 ```
 
