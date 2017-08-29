@@ -24,7 +24,7 @@ RUN apk --no-cache add build-base && \
     wget http://caml.inria.fr/pub/distrib/ocaml-${OCAML_MAJOR}/ocaml-${OCAML_VERSION}.tar.gz && \
     tar xzf ocaml-${OCAML_VERSION}.tar.gz && \
     cd ocaml-${OCAML_VERSION} && \
-    ./configure && make world && make install && make clean && \
+    ./configure && make world.opt && umask 022 && make install && make clean && \
     cd .. && \
     rm -f ocaml-${OCAML_VERSION}.tar.gz && \
     rm -rf ocaml-${OCAML_VERSION} && \
