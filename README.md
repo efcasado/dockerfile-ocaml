@@ -6,10 +6,10 @@ Dockerized, Alpine-based OCaml development environment.
 
 ### Versions
 
-| OCaml Version | Base Image   |
-|:--------------|:------------:|
-| `4.04.2`      | `alpine:3.6` |
-| `4.04.1`      | `alpine:3.6` |
+| OCaml Version | OPAM Version | Base Image   |
+|:--------------|:------------:|:------------:|
+| `4.04.2`      | `1.2.2`      | `alpine:3.6` |
+| `4.04.1`      | `1.2.2`      | `alpine:3.6` |
 
 
 ### Aliases
@@ -28,6 +28,7 @@ source ./dotfiles/.bashrc
 | `ocaml`    | The Ocaml interactive toplevel |
 | `ocamlc`   | The Ocaml bytecode compiler    |
 | `ocamlrun` | The Ocaml bytecode interpreter |
+| `opam`     | The Ocaml package manager      |
 
 
 ### How do I know it works?
