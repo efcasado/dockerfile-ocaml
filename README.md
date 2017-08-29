@@ -1,5 +1,5 @@
 # OCaml Dockerfile
-[![Travis](https://img.shields.io/travis/efcasado/dockerfile-ocaml.svg?style=flat)](https://travis-ci.org/efcasado/dockerfile-ocaml) [![Docker Stars](https://img.shields.io/docker/stars/efcasado/ocaml.svg)](https://hub.docker.com/r/efcasado/ocaml/) [![Docker Pulls](https://img.shields.io/docker/pulls/efcasado/ocaml.svg)](https://hub.docker.com/r/efcasado/ocaml/)
+[![Travis](https://img.shields.io/travis/efcasado/dockerfile-ocaml.svg?style=flat)](https://travis-ci.org/efcasado/dockerfile-ocaml) [![Docker Stars](https://img.shields.io/docker/stars/efcasado/ocaml.svg)](https://hub.docker.com/r/efcasado/ocaml/) [![Docker Pulls](https://img.shields.io/docker/pulls/efcasado/ocaml.svg)](https://hub.docker.com/r/efcasado/ocaml/) [![license](https://img.shields.io/github/license/efcasado/dockerfile-ocaml.svg)]()
 
 Dockerized, Alpine-based OCaml development environment.
 
