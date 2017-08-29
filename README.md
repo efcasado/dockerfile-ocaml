@@ -4,6 +4,14 @@
 Dockerized, Alpine-based OCaml development environment.
 
 
+### Versions
+
+| OCaml Version | Base Image   |
+|:--------------|:------------:|
+| `4.04.2`      | `alpine:3.6` |
+| `4.04.1`      | `alpine:3.6` |
+
+
 ### Aliases
 
 When using this dev environment, I strongly recommend you to use the aliases
@@ -11,22 +19,15 @@ included in the `.bashrc` file featured in this repository. These aliases
 will let you work with OCaml, seamlessly, despite it running inside a Docker
 container.
 
-#### ocaml
+```bash
+source ./dotfiles/.bashrc
+```
 
-The OCaml interactive toplevel
-
-#### ocamlc
-
-The OCaml bytecode compiler
-
-#### ocamlrun
-
-The OCaml bytecode interpreter
-
-#### opam
-
-The OCaml package manager
-
+| Alias      | Description                    |
+|:-----------|:------------------------------:|
+| `ocaml`    | The Ocaml interactive toplevel |
+| `ocamlc`   | The Ocaml bytecode compiler    |
+| `ocamlrun` | The Ocaml bytecode interpreter |
 
 
 ### How do I know it works?
