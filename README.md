@@ -1,47 +1,31 @@
 # OCaml Dockerfile
 
-Dockerized, debian-based OCaml development environment.
+Dockerized, Alpine-based OCaml development environment.
 
 
 ### Aliases
 
-When using this dev environment, I strongly recommend you to define the
-following aliases. These will let you seamlessly work with OCaml, locally,
-despite it running inside a Docker container.
-
-> Note that all these aliases require the **DKR_ML_IMAGE** and **DKR_ML_OPTS**
-> environment variables to be set. In my set-up, I am setting them to
-> 'ocaml' and '-it --rm -v $(pwd):/code -w /code -e HOME=/tmp', respectively,
-> but they could be set to other values that meet better your requirements.
->
-> The **DKR_ML_{OCAML, OCAMLC, OCAMLRUN}_OPTS** environment variables are
-> optional and are used to specify settings that are specific to the command
-> they refer to (i.e. ocaml, ocamlc, ocamlrun).
-
+When using this dev environment, I strongly recommend you to use the aliases
+included in the `.bashrc` file featured in this repository. These aliases
+will let you work with OCaml, seamlessly, despite it running inside a Docker
+container.
 
 #### ocaml
 
 The OCaml interactive toplevel
 
-```bash
-alias ocaml="docker run $DKR_ML_OPTS $DKR_ML_OCAML_OPTS --entrypoint ocaml $DKR_ML_IMAGE"
-```
-
 #### ocamlc
 
 The OCaml bytecode compiler
-
-```bash
-alias ocamlc="docker run $DKR_ML_OPTS $DKR_ML_OCAMLC_OPTS --entrypoint ocamlc $DKR_ML_IMAGE"
-```
 
 #### ocamlrun
 
 The OCaml bytecode interpreter
 
-```bash
-alias ocamlrun="docker run $DKR_ML_OPTS $DKR_ML_OCAMLRUN_OPTS --entrypoint ocamlrun $DKR_ML_IMAGE"
-```
+#### opam
+
+The OCaml package manager
+
 
 
 ### How do I know it works?
@@ -69,14 +53,14 @@ Hello, world!
 
 ### Author(s)
 
-  - Enrique Fernandez `<efcasado(at)gmail.com>`
+- Enrique Fernandez `<efcasado(at)gmail.com>`
 
 
 ### License
 
 > The MIT License (MIT)
 >
-> Copyright (c) 2016, Enrique Fernandez
+> Copyright (c) 2016 - 2017, Enrique Fernandez
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
