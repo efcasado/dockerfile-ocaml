@@ -23,12 +23,21 @@ container.
 source ./dotfiles/.bashrc
 ```
 
-| Alias      | Description                    |
-|:-----------|:-------------------------------|
-| `ocaml`    | The Ocaml interactive toplevel |
-| `ocamlc`   | The Ocaml bytecode compiler    |
-| `ocamlrun` | The Ocaml bytecode interpreter |
-| `opam`     | The Ocaml package manager      |
+| Alias        | Description                            |
+|:-------------|:---------------------------------------|
+| `ocaml`      | The OCaml interactive toplevel         |
+| `ocamlc`     | The OCaml bytecode compiler            |
+| `ocamlcp`    | The OCaml profiling compilers          |
+| `ocamldebug` | The OCaml profiling compilers          |
+| `ocamldep`   | Dependency generator for Ocaml         |
+| `ocamldoc`   | The OCaml documentation generator      |
+| `ocamllex`   | The OCaml lex generator                |
+| `ocamlmktop` | Building custom top-level systems      |
+| `ocamlopt`   | The OCaml native-code compiler         |
+| `ocamlrun`   | The OCaml bytecode interpreter         |
+| `ocamlprof`  | The OCaml profiler                     |
+| `ocamlyacc`  | The OCaml parser generator             |
+| `opam`       | The OCaml source-level replay debugger |
 
 
 ### How do I know it works?
