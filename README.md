@@ -1,4 +1,5 @@
 # OCaml Dockerfile
+[![Travis](https://img.shields.io/travis/efcasado/dockerfile-ocaml.svg?style=flat)](https://travis-ci.org/efcasado/dockerfile-ocaml)
 
 Dockerized, Alpine-based OCaml development environment.
 
