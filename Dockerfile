@@ -16,12 +16,23 @@ ARG        OPAM_VERSION=1.2.2
 
 
 ##== Layers ===============================================================
-# SSL
-RUN apk --no-cache add openssl ca-certificates
+# Miscellany
+RUN apk --no-cache add \
+      build-base \
+      wget \
+      openssl \
+      ca-certificates \
+      bash \
+      m4 \
+      git \
+      rsync \
+      mercurial \
+      patch \
+      perl \
+      aspcud
 
 # OCaml and OPAM
-RUN apk --no-cache add build-base && \
-    wget http://caml.inria.fr/pub/distrib/ocaml-${OCAML_MAJOR}/ocaml-${OCAML_VERSION}.tar.gz && \
+RUN wget http://caml.inria.fr/pub/distrib/ocaml-${OCAML_MAJOR}/ocaml-${OCAML_VERSION}.tar.gz && \
     tar xzf ocaml-${OCAML_VERSION}.tar.gz && \
     cd ocaml-${OCAML_VERSION} && \
     ./configure && make world.opt && umask 022 && make install && make clean && \
@@ -34,5 +45,4 @@ RUN apk --no-cache add build-base && \
     ./configure && make lib-ext && make && make install && \
     cd .. && \
     rm -f opam-full-${OPAM_VERSION}.tar.gz && \
-    rm -rf opam-full-${OPAM_VERSION} && \    
-    apk del build-base
+    rm -rf opam-full-${OPAM_VERSION}
