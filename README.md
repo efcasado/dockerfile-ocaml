@@ -8,6 +8,7 @@ Dockerized, Alpine-based OCaml development environment.
 
 | OCaml Version | OPAM Version | Base Image   |
 |:--------------|:------------:|:------------:|
+| `4.05.0`      | `1.2.2`      | `alpine:3.6` |
 | `4.04.2`      | `1.2.2`      | `alpine:3.6` |
 | `4.04.1`      | `1.2.2`      | `alpine:3.6` |
 
