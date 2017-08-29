@@ -8,7 +8,7 @@
 ###   - Enrique Fernandez <efcasado@gmail.com>
 ###========================================================================
 ##== Environment variables ================================================
-export OCAML_VERSION=4.04.1-r0
+export OCAML_VERSION=4.04.2
 
 ##== Aliases ==============================================================
 OCAML_DKR_IMAGE="efcasado/ocaml:\$OCAML_VERSION"
