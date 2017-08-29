@@ -24,7 +24,7 @@ source ./dotfiles/.bashrc
 ```
 
 | Alias      | Description                    |
-|:-----------|:------------------------------:|
+|:-----------|:-------------------------------|
 | `ocaml`    | The Ocaml interactive toplevel |
 | `ocamlc`   | The Ocaml bytecode compiler    |
 | `ocamlrun` | The Ocaml bytecode interpreter |
