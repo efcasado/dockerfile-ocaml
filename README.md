@@ -45,23 +45,18 @@ source ./dotfiles/.bashrc
 ### How do I know it works?
 
 Assuming you've defined the aliases I mentioned in the section above, you just
-need to create a simple OCaml program, like the `hello.ml` program that ships
-with this Git respository and run the following commands. If everything worked
-correctly, you should now see the `Hello, world!` message printed in your
-terminal.
-
-```ocaml
-(* File: hello.ml
-
-   "Hello world" program written in OCaml. *)
-
-print_string "Hello, world!\n";;
-```
+need to execute the following command to run a simple `Hello, world!` example.
+If everything went well, you should now see the `Hello, world!` message printed
+in your terminal.
 
 ```bash
-> ocamlc hello.ml -o hello
-> ocamlrun hello
-Hello, world!
+ocaml \< examples/hello.ml
+
+        OCaml version 4.05.0
+
+#     Hello, world!
+- : unit = ()
+#
 ```
 
 
