@@ -20,6 +20,7 @@ before_install:
   - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
 
 script:
+  - set -e
   - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
   - docker build --build-arg=$ALPINE_VERSION --build-arg OCAML_MAJOR=$OCAML_MAJOR --build-arg OCAML_VERSION=$OCAML_VERSION --build-arg OPAM_VERSION=$OPAM_VERSION -t efcasado/ocaml:$OCAML_VERSION .
   - source ./dotfiles/.bashrc
