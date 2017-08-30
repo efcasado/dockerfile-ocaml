@@ -20,54 +20,58 @@ OCAML_DKR_RUN_OPTS="\
 "
 
 function ocaml() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocaml $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocaml $*\""
 }
 
 function ocamlc() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlc $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlc $*\""
 }
 
 function ocamlcp() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlcp $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlcp $*\""
 }
 
 function ocamldebug() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamldebug $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamldebug $*\""
 }
 
 function ocamldep() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamldep $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamldep $*\""
 }
 
 function ocamldoc() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamldoc $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamldoc $*\""
 }
 
 function ocamllex() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamllex $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamllex $*\""
 }
 
 function ocamlmktop() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlmktop $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlmktop $*\""
 }
 
 function ocamlopt() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlopt $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlopt $*\""
 }
 
 function ocamlrun() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlrun $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlrun $*\""
 }
 
 function ocamlprof() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlprof $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlprof $*\""
 }
 
 function ocamlyacc() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE ocamlyacc $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"ocamlyacc $*\""
 }
 
 function opam() {
-    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE opam $*"
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"opam $*\""
+}
+
+function utop() {
+    bash -c "docker run $OCAML_DKR_RUN_OPTS $OCAML_DKR_IMAGE \"utop $*\""
 }
 

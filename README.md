@@ -39,6 +39,7 @@ source ./dotfiles/.bashrc
 | `ocamlprof`  | The OCaml profiler                     |
 | `ocamlyacc`  | The OCaml parser generator             |
 | `opam`       | The OCaml source-level replay debugger |
+| `utop`       | An improved toplevel for Ocaml         |
 
 
 ### How do I know it works?

@@ -10,8 +10,8 @@
 ARG        ALPINE_VERSION=3.6
 FROM       alpine:${ALPINE_VERSION}
 MAINTAINER Enrique Fernandez <efcasado@gmail.com>
-ARG        OCAML_MAJOR=4.04
-ARG        OCAML_VERSION=4.04.1
+ARG        OCAML_MAJOR=4.05
+ARG        OCAML_VERSION=4.05.0
 ARG        OPAM_VERSION=1.2.2
 
 
@@ -45,4 +45,9 @@ RUN wget http://caml.inria.fr/pub/distrib/ocaml-${OCAML_MAJOR}/ocaml-${OCAML_VER
     ./configure && make lib-ext && make && make install && \
     cd .. && \
     rm -f opam-full-${OPAM_VERSION}.tar.gz && \
-    rm -rf opam-full-${OPAM_VERSION}
+    rm -rf opam-full-${OPAM_VERSION} && \
+    yes | opam init && \
+    eval `opam config env` && \
+    yes | opam install utop
+
+ENTRYPOINT [ "bash", "-l", "-c" ]
